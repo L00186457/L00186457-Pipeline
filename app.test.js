@@ -1,5 +1,6 @@
+// app.test.js
 const greet = require('./app');
 
-test('should return greeting message', () => {
-  expect(greet()).toBe('Hello, World!');
+test('This test should return greeting message- This is task 3 test file', () => {
+  expect(greet()).toBe('This is task 3 test file!');
 });
