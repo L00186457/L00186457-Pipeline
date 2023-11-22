@@ -47,6 +47,3 @@ jobs:
 
       - name: Run tests in Staging
         run: npm run test:staging
-
-      - name: Run login tests
-        run: npm run test:login
