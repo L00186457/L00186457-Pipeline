@@ -4,7 +4,7 @@
     "scripts": {
         "test": "jest",
         "test:unit": "jest app.test.js",
-        "test:staging": "echo 'Running tests in Staging...'",
+        "test:staging": "jest staging.test.js",
         "test:login": "jest login.test.js"
     },
     "devDependencies": {
