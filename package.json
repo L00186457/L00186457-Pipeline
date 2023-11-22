@@ -1,5 +1,6 @@
 "scripts": {
     "test": "jest",
-    "test:unit": "jest app.test.js"
+    "test:unit": "jest app.test.js",
+    "test:staging": "echo 'Running tests in Staging...'"
   }
   
