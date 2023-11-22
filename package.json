@@ -1,5 +1,5 @@
   {
-    "name": "pipeline-task-3",
+    "name": "loo186457-cicd-pipeline",
     "version": "1.0.0",
     "scripts": {
         "test": "jest",

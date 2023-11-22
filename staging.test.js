@@ -1,12 +1,12 @@
 // staging.test.js
-test('should display welcome message on staging', () => {
+test('Should display welcome message on staging', () => {
     // Replace this with your actual test logic for the staging environment
     const welcomeMessage = getWelcomeMessage();
   
     expect(welcomeMessage).toBe('Welcome to Staging!');
   });
   
-  test('should have a functional staging API', async () => {
+  test('Should have a functional staging API', async () => {
     // Replace this with your actual test logic for the staging API
     const response = await fetchStagingAPI();
   
