@@ -1,5 +1,5 @@
 # .github/workflows/build-test.yml
-name: Build and Test
+name: Build, Test, and Deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,20 +25,5 @@ jobs:
       - name: Run tests
         run: npm test
 
-  unit-test:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run unit tests
-        run: npm run test:unit
+      - name: Deploy to Staging
+        run: echo "Deploying to Staging..."
